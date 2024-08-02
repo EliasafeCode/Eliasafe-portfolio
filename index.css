@@ -50,10 +50,20 @@ nav ul li a {
     color: var(--txtcolor);
     font-size: 25px;
     font-weight: 200;
+    position: relative;
 }
-nav ul li a:hover {
-    border-bottom: 1px solid var(--scnd-color);
-    transition: 0.4s;
+nav ul li a::after {
+    content: " ";
+    height: 1px;
+    width: 0%;
+    background-color: #E33A58;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover::after {
+    width: 100%;
 }
 #link-home {
     color: #E33A58;
@@ -135,7 +145,6 @@ ion-icon {
     align-items: center;
     margin: 15px;
     margin-bottom: 200px;
-
 }
 h1 {
     font-weight: 200;
@@ -158,7 +167,6 @@ h1 {
 #txt-aboutme {
     font-family:"DM sans", sans-serif;
 }
-
 #h1-habilidades {
     text-align: center;
     margin: 90px 0;
@@ -171,7 +179,6 @@ h1 {
     justify-content: center;
     gap: 70px;
     border-radius: 15px;
-
 }
 #section3 img {
     height: 100px;
@@ -220,8 +227,6 @@ h1 {
     display: flex;
     justify-content: center;
 }
-
-
 footer {
     background-color:  #111111;
     display: flex;
@@ -230,79 +235,4 @@ footer {
 footer a {
     color: white;
     font-weight: 600;
-}
-@media screen and (max-width:603px){
-    nav, ul, li, a {
-        display: none;
-    }
-    [name="menu-outline"], #menu-bar{
-        display: inline-block;
-        padding: 4px;
-        font-size: 40px;
-    }
-    [name="menu-outline"] {
-        margin-top: -1px;
-    }
-    header {
-        display: flex;
-        margin: 10px 10px 10px 10px;
-    }
-    #section1 {
-        margin: 10px 10px 10px 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    #container-img-section1 {
-        margin: 0 auto;
-        text-align: center;
-    }
-    #img-section1 {
-        height: 250px;
-    }
-    #apresentation {
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        min-width: 347px;
-    }
-    #apresentation h1 {
-        font-size: 34px;
-    }
-    #apresentation h2 {
-        font-size: 24px;
-    }
-    #apresentation h3 {
-        font-size: 14px;
-    }
-    #h1-aboutme {
-        display: none;
-    }
-    #section2 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0;
-    
-    }
-    #h1-aboutme2 {
-        display: block;
-    }
-    #container-img-section2 {
-        margin: 0;
-    }
-    #txt-aboutme {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 5px;
-    }
-    #txt-aboutme p {
-        text-align: justify;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 10px 50px;
-    }
-    #section4 h1{
-        margin: 0;
-    }
 }

@@ -1,0 +1,78 @@
+@media screen and (max-width:603px){
+    nav, ul, li, a {
+        display: none;
+    }
+    [name="menu-outline"], #menu-bar{
+        display: inline-block;
+        font-size: 40px;
+        margin: 6px 0 0 0;
+    }
+    [name="menu-outline"] {
+        margin-top: -1px;
+    }
+    header {
+        display: flex;
+        margin: 10px 10px 10px 10px;
+    }
+    #section1 {
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #container-img-section1 {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #img-section1 {
+        height: 250px;
+    }
+    #apresentation {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        min-width: 347px;
+    }
+    #apresentation h1 {
+        font-size: 34px;
+    }
+    #apresentation h2 {
+        font-size: 24px;
+    }
+    #apresentation h3 {
+        font-size: 14px;
+    }
+    #h1-aboutme {
+        display: none;
+    }
+    #section2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    #h1-aboutme2 {
+        display: block;
+    }
+    #container-img-section2 {
+        margin: 0;
+    }
+    #txt-aboutme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #txt-aboutme p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 10px 16px;
+    }
+    #section4 h1{
+        margin: 0;
+    }
+    #h1-habilidades {
+        margin: 40px;
+    }
+}
