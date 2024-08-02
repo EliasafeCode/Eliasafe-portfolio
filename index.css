@@ -24,14 +24,17 @@ header {
     margin: 20px 250px;
 }
 header h1 {
-    font-size: 30px;
-    padding: 7px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
 }
 header h1 span{
     color: var(--scnd-color);
 }
 nav {
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 [name="menu-outline"], #menu-bar{
     display: none;
@@ -41,13 +44,12 @@ nav ul {
     flex-direction: row;
     gap: 70px;
     list-style: none;
-
 }
 nav ul li a {
     text-decoration: none;
     color: var(--txtcolor);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 200;
 }
 nav ul li a:hover {
     border-bottom: 1px solid var(--scnd-color);
