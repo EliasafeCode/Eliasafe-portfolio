@@ -50,7 +50,7 @@ nav ul {
 }
 nav ul li .bx {
     font-size: 18px;
-    padding-right: 3px;
+    padding-right: 10px;
 }
 #light-dark-mode .bx{
     color: var(--txt-10-opacity);
@@ -69,7 +69,7 @@ nav ul li a {
     font-size: 21px;
     position: relative;
 }
-nav ul li a::after {/*  */
+nav ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -122,11 +122,6 @@ nav ul li a:hover::after {
 #s1-col2 h3 {
     font-size: 1.2em;
     opacity: 80%;
-}
-#s1-col2-icons{
-    margin-top: 25px;
-    display: flex;
-    gap: 10px;
 }
                                     /*CODIGO DA SEÇÃO 2*/
 .title-sections {
