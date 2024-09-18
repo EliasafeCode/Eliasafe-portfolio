@@ -18,6 +18,7 @@ html {
     --second-color: rgb(108, 108, 0);
     --txt-10-opacity: #000000b8;
 }
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -41,6 +42,7 @@ nav h1 {
     color: var(--primary-color);
 }
 nav ul {
+    margin: 0 100px 0 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,15 +51,21 @@ nav ul {
     padding-top: 6px;
 }
 nav ul li .bx {
+    color: var(--hover-color);
     font-size: 18px;
     padding-right: 10px;
 }
 #light-dark-mode .bx{
+    background-color: rgba(0, 0, 0, 0.107);
     color: var(--txt-10-opacity);
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 50px;
     font-size: 22px;
-    padding-right: 3px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#light-dark-mode .bx:hover {
+    background-color: rgba(198, 107, 255, 0.27) ;
 }
 #menubar {
     display: none;
@@ -69,12 +77,13 @@ nav ul li a {
     font-size: 21px;
     position: relative;
 }
-nav ul li a::after {
+nav ul li a::after{
     content: "";
     width: 0%;
     height: 2px;
     background-color: var(--primary-color);
     position: absolute;
+    top: 26px;
     bottom: 0;
     left: 0;
 }
@@ -312,14 +321,7 @@ nav ul li a:hover::after {
 
 
 
-@media screen and (max-width: 1888px){
-    nav ul, #light-dark-mode {
-        display: none;
-    }
-    #menubar {
-        display: block;
-        font-size: 30px;
-    }
+@media screen and (max-width: 1511px){
 }
 @media screen and (max-width: 1365px) {
     #section4 {
@@ -336,9 +338,19 @@ nav ul li a:hover::after {
     }
 }
 @media screen and (max-width: 1000px) {
+    #menubar {
+        display: block;
+        font-size: 30px;
+    }
+    #light-dark-mode {
+        display: none;
+    }
     #section1 {
         flex-direction: column;
         align-items: center;
+    }
+    nav {
+        margin: 0 30px;
     }
 } 
 @media screen and (max-width: 879px) {
@@ -359,7 +371,7 @@ nav ul li a:hover::after {
     }
 }
 @media screen and (max-width: 589px) {
-    nav {
-        margin: 0 50px;
-    }
+
+}body * {
+    border: 1px slid red;
 }
